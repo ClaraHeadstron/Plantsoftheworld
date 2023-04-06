@@ -1,0 +1,78 @@
+/* Nav bar css including dropdown */
+.navbar {
+  overflow: hidden;
+  background-color: #eaf2cc;
+  font-family: Arial;
+
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 25px 125px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar input {
+  float: middle;
+  text-align:center;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #aab28c;
+  color: black;
+}
+
+.dropdown {
+  float:left;
+  overflow:hidden;
+}
+
+.dropdown .dropdownbtn{
+  border:none;
+  background-color: #eaf2cc;
+  padding: 25px 125px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 0;
+
+}
+
+.dropdownbtn:hover{
+  background-color: #aab28c;
+}
+
+.dropdown-content {
+  display: none;
+  background-color:#eaf2cc;
+  position:absolute;
+  width: 298px;
+}
+
+.dropdown-content a {
+  float: none;
+  padding: 25px 75px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  
+}
+
+.dropdown-content a:hover {
+  background-color: #aab28c;
+}
+
+/*Show the dropdowns */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*  
+
+#maintitle {
+  color:red;
+}
