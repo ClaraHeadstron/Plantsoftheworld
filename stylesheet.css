@@ -71,10 +71,18 @@
   display: block;
 }
 
+#searchBar {
+  margin-top:25px;
+  margin-left:25px;
+  font-size:15px;
+  position:relative;
+}
 
 
+/*
 
-/*Search bar attempt*/
+
+/*Search bar attempt
 .search-dropdown-content {
   background-color:#b5e78d;
   position:relative;
@@ -103,7 +111,7 @@
   display:block;
 }
 
-
+*/
 
 
 /*End of nav bar */
