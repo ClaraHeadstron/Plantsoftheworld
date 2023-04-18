@@ -1,7 +1,7 @@
 /* Nav bar css including dropdown */
 .navbar {
   overflow: hidden;
-  background-color: #eaf2cc;
+  background-color: #b5e78d;
   font-family: Arial;
 }
 
@@ -15,10 +15,9 @@
   font-size: 17px;
 }
 
-.navbar input {
+.navbar .search-dropdown{
   float: middle;
-  text-align:center;
-  font-size: 17px;
+  overflow:hidden;
 }
 
 .navbar a:hover {
@@ -30,10 +29,12 @@
   float:left;
   overflow:hidden;
 }
-/* Make droppdown allways on top*/
+
+
+/* Make droppdown always on top*/
 .dropdown .dropdownbtn{
   border:none;
-  background-color: #eaf2cc;
+  background-color: #b5e78d;
   padding: 25px 125px;
   text-decoration: none;
   font-size: 17px;
@@ -46,7 +47,7 @@
 
 .dropdown-content {
   display: none;
-  background-color:#eaf2cc;
+  background-color:#b5e78d;
   position:absolute;
   width: 298px;
   z-index:2;
@@ -69,7 +70,42 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
- 
+
+
+
+
+/*Search bar attempt*/
+.search-dropdown-content {
+  background-color:#b5e78d;
+  position:relative;
+  width: 300px;
+  z-index:2;
+  display: none;
+}
+
+.search-dropdown-content a {
+  float: none;
+  padding: 25px 75px;
+  text-decoration: none;
+  text-align: left;  
+}
+
+.search-dropdown-content a:hover {
+  background-color: #aab28c;
+}
+
+.search-dropdown:hover .search-dropdown-content {
+  display:inline;
+  float:right;
+}
+
+#myMenu li {
+  display:block;
+}
+
+
+
+
 /*End of nav bar */
 #mainTitle {
   padding: 5px;
@@ -83,12 +119,6 @@
 }
 
 #startP{
-  position:relative;
-}
-
-#searchBar {
-  margin-top:25px;
-  float:middle;
   position:relative;
 }
 
@@ -204,4 +234,139 @@
   float: left;
   width: 50%;
   padding: 10px;
+}
+
+/*Plant links and nav bar*/
+.plants a {
+  color:green;
+  background-color: transparent;
+}
+
+.logoNav{
+  margin:10px 5px 5px 15px;
+  position:relative;
+  height:50px;
+  left:100px
+}
+
+/*Plant page*/
+.plantName{
+  position:relative; 
+  padding: 10px 10px 10px 15px;
+  left:10px;
+  background-color:lightgrey;
+  border-top:2px solid black;
+  margin-top:20px;
+  width:260px;
+  display: inline;
+  float: left;
+  clear: both;
+}
+
+.plantImage{
+  position:relative;
+  height:220px;
+  width:400px;
+  left:100px;
+}
+
+.facts{
+  clear:both;
+  float:right;
+  width:50%;
+}
+
+.factTitle{
+  position:relative; 
+  padding: 10px 10px 10px 15px;
+  left:10px;
+  background-color:lightgrey;
+  border-top:2px solid black;
+  margin-top:20px;
+  width:400px;
+  clear: both;
+}
+
+.plantBP{
+  padding:2px;
+}
+
+.mainPlantText{
+  position:relative; 
+  padding: 10px 10px 10px 5px;
+  background-color:lightgrey;
+  border-top:2px solid black;
+  width:400px;
+}
+
+.box{
+  margin-top:20px;
+  padding:0px 15px 10px 0px;
+  border:2px;
+  border-color:black;
+  border-style: solid;
+  width:65%;
+}
+
+.delving{
+  padding-left: 10px;
+}
+
+.popup{
+  position: relative;
+  display: inline-block;
+  left:900px;
+  border:2px;
+  border-style: solid;
+  margin-top:5px;
+  top:-200px;
+  padding:20px;
+  text-align:left;
+  background-color:#bcf48e;
+} 
+
+.popdown{
+  position: relative;
+  display: inline-block;
+  border:2px;
+  border-style: solid;
+  border-color: #454545;
+  margin-top:4px;
+  padding:6px;
+  bottom:5px;
+  color:#454545;
+  background-color: #b5e78d;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 300px;
+  height:250px;
+  background-color: #028c0b;
+  color: #ffffffff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom:100px;
+  right:50px;
+  margin-left: -80px;
+  border-style:dotted;
+  border-width: 3px;
+}
+
+.factList{
+  width:45%;
+  float:left;
+  text-align:left;
+  padding:8px;
+}
+
+.popup .show {
+  visibility: visible;
+}
+
+.popup .hide {
+  visibility: hidden;
 }

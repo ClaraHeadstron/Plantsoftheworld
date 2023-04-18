@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Italian arum - Arum italicum
+        </title>
+		<link rel="stylesheet" href="stylesheet.css">
+        <link rel="javascript" href="script.js">
+
+	</head>
+    <body>
+		<div class="navbar">
+  			<a class="active" href="index.html">Home</a>
+			<div class="dropdown">
+				<button class="dropdownbtn">Zones
+				</button>
+				<div class="dropdown-content">
+					<a href="zoneEurope.html">Europe </a>
+					<a href="zoneAfrica.html">Africa</a>
+					<a href="zoneAsiaTemp.html">Asia Temperate</a>
+				  <a href="zoneAsiaTrop.html">Asia Tropical</a>
+					<a href="zoneAustralasia.html">Australasia</a>
+					<a href="zonePacific.html">Pacific</a>
+					<a href="zoneNAmerica.html">Northern America</a>
+					<a href="zoneSAmerica.html">Southern America</a>
+					<a href="zoneAntartica.html">Antarctic</a>
+				  </div>
+			</div>
+			<a href="contactPage.html">Contact</a>
+            <img class=logoNav src="logo.png" alt="logo">
+		</div>
+        <div class="rest">
+        <h2 class="plantName">Italian Arum</h2>
+
+        <div class="facts">
+            <h4 class="factTitle">Facts</h4>
+            <ul>
+                <li class="plantBP">Arum Italica grows best in cloudy conditions</li>
+                <li class="plantBP">Arum is native in 28 countries</li>
+                <li class="plantBP">Arum has been introduced to 10 other countries or states</li>
+                <li class="plantBP">Arum can withstand up to -20 degree cold </li>
+
+            </ul>
+        </div>
+        <img class="plantImage" src="ArumItalicaImage.jpg">
+
+        <div class="box">
+            <h3 class="mainPlantText">Deep Delve into Italian Arum</h3>
+            <p class=delving> 
+                In its 'wild' form is more modest than the commonly grown 'Marmoratum' but has pleasantly 
+                glossy green leaves with a tracery of paler veins. It blooms in spring with white flowers 
+                that turn to showy red fruit.It is cultivated as an ornamental plant for traditional and woodland shade gardens.
+            </p>
+            <p class="delving">
+                Arum italicum, the Italian Arum is endemic to a large swathe of Europe including the UK and Eire. 
+                Together with Arum maculatum, it is one of only two aroids native to the UK. It is also probably the 
+                hardiest of the aroids ... unlike Arum maculatum, Lysichiton and Symplocarpus - all of which have the 
+                good sense not to appear until after the worst of the frosts have passed - Arum italicum will often 
+                be showing its foliage through the coldest period of winter. 
+            </p>
+        </div>
+        <div class="popup" onclick="factfileFunction()">Click me!
+            <span class="popuptext" id="myPopup">
+                <h3>Italian Arum</h3>
+                <div class="factList">
+                    <ul>
+                    <li>Location: </li>
+                    <li>Growth: </li>
+                    <li>Edible: </li>
+                    <li>Soil pH: </li>
+                    <li>Colour: </li>
+                    </ul>
+                </div>
+                <div class="factList">
+                        <br>
+                        West Europe<br>
+                        Herb/Forb<br>
+                        Toxic<br>
+                        6.5 to 7<br>
+                        Green (Red fruit)<br>
+
+                </div>
+                
+                <div class="popdown">Exit</div>
+            </span>
+        </div>
+        
+        <script>
+            function factfileFunction() {
+                var popup = document.getElementById("myPopup");
+                popup.classList.toggle("show");
+            }
+            
+        </script>
+
+</body>
+</html>
+
+

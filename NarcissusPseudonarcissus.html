@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tenby Daffodil - Narcissus Pseudonarcissus </title>
+		<link rel="stylesheet" href="stylesheet.css">
+        <link rel="javascript" href="script.js">
+
+	</head>
+    <body>
+		<div class="navbar">
+  			<a class="active" href="index.html">Home</a>
+			<div class="dropdown">
+				<button class="dropdownbtn">Zones
+				</button>
+				<div class="dropdown-content">
+					<a href="zoneEurope.html">Europe </a>
+					<a href="zoneAfrica.html">Africa</a>
+					<a href="zoneAsiaTemp.html">Asia Temperate</a>
+				  <a href="zoneAsiaTrop.html">Asia Tropical</a>
+					<a href="zoneAustralasia.html">Australasia</a>
+					<a href="zonePacific.html">Pacific</a>
+					<a href="zoneNAmerica.html">Northern America</a>
+					<a href="zoneSAmerica.html">Southern America</a>
+					<a href="zoneAntartica.html">Antarctic</a>
+				  </div>
+			</div>
+			<a href="contactPage.html">Contact</a>
+            <img class=logoNav src="logo.png" alt="logo">
+		</div>
+        <div class="rest">
+        <h2 class="plantName">Tenby Daffodil</h2>
+
+        <div class="facts">
+            <h4 class="factTitle">Facts</h4>
+            <ul>
+                <li class="plantBP">Daffodils are best for soil with a pH > 5.5 and < 6.5 </li>
+                <li class="plantBP">Daffodils are native in 8 European countries</li>
+                <li class="plantBP">Daffodil sap can cause a rash</li>
+                <li class="plantBP">Daffodils were once called daffodowndilly</li>
+
+            </ul>
+        </div>
+        <img class="plantImage" src="NarcissusPseudonarcissusImage.jpg">
+
+        <div class="box">
+            <h3 class="mainPlantText">Deep Delve into Tenby Daffodils</h3>
+            <p class=delving> Tenby Daffodils are the most commonly known daffodil. The flower in March and grow to between 8 and 12 inches. 
+                The botanical name for the daffodil is narcissus, named after the beautiful youth in Greek mythology who was tricked
+                into falling in love with his own reflection. The drooping flowers that characterise most daffodils are said to recall
+                Narcissus bending over to catch his image in a pool of water.
+                The name derives from the Greek ‘narco’, root of the word narcotic. The etymology probably relates to the daffodil's
+                toxicity – all parts of the plant are poisonous. The stalk's sap can cause a rash when it comes in contact with the skin.
+                </p>
+                <p class="delving">
+                Daffodils have inspired writers, poets and artists through the centuries. A favourite flower among the Romantic poets,
+                 they were immortalised by Wordsworth in his poem Daffodils, one of the most famous in the English language.
+
+                The poet’s line ‘A host of golden daffodils’ recalls the swathes of wild flowers discovered on a walk with his sister Dorothy 
+                along the shore of Ullswater in the Lake District in early April 1802.
+                Over the centuries, daffodils have been given many common or local names, including the daffodowndilly, yellow maiden 
+                and Lent lily, a reference to their flowering season coinciding with the period leading up to Easter.
+                Daffodowndilly was writer A.A. Milne’s choice for his poem about the flower, published in his book of verse for children, 
+                When We Were Very Young (1924).
+            </p>
+        </div>
+        <div class="popup" onclick="factfileFunction()">Click me!
+            <span class="popuptext" id="myPopup">
+                <h3>Tenby Daffodil</h3>
+                <div class="factList">
+                    <ul>
+                    <li>Location: </li>
+                    <li>Growth: </li>
+                    <li>Edible: </li>
+                    <li>Soil pH: </li>
+                    <li>Colour: </li>
+                    </ul>
+                </div>
+                <div class="factList">
+                        <br>
+                        West Europe<br>
+                        Herb/Forb<br>
+                        No<br>
+                        5.5 to 6.5<br>
+                        Yellow<br>
+
+                </div>
+                
+                <div class="popdown" onclick="factfileExitFunction()">Exit</div>
+            </span>
+        </div>
+        
+        <script>
+            function factfileFunction() {
+                var popup = document.getElementById("myPopup");
+                popup.classList.toggle("show");
+            }
+            
+            function factfileExitFunction() {
+                var popup = document.getElementById("myPopup");
+                popup.classList.toggle("hide");
+            }
+        </script>
+
+</body>
+</html>
+
+

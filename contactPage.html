@@ -7,7 +7,7 @@
 	</head>
 	<body>
 		<div class="navbar">
-  			<a class="active" href="#home">Home</a>
+  			<a class="active" href="index.html">Home</a>
 			<div class="dropdown">
 				<button class="dropdownbtn">Zones
 				</button>
@@ -30,8 +30,7 @@
      <h1>Contact Us</h1>
 
      <p>Sometimes websites break or we make a mistake with a plant's information. If you notice anything wrong - fill in this form!</p>
-
-        <form action="issueForm.php" method="post">
+		<form class="form" id="formID">
         Please enter your name:<br>
         <input type="text" name="fname"><br>
 
@@ -41,9 +40,9 @@
         Please enter your email:<br>
         <input type="text" name="email"><br>
         <br>
-        <button type="submit"name="submit"> 
-        </form>
-            
+        <button type="submit" name="submit" onclick="submitFunction">Submit</button>
         
+		</form>
+	</div>
     </body>
 </html>
