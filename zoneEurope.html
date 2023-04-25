@@ -3,35 +3,33 @@
 	<head>
 		<title>Plants in Europe</title>
 		<link rel="stylesheet" href="stylesheet.css">
-
+		<script src = "script.js"></script>
 	</head>
     <body>
 		<div class="navbar">
-  			<a class="active" href="index.html">Home</a>
-			<div class="dropdown">
-				<button class="dropdownbtn">Zones
-				</button>
-				<div class="dropdown-content">
-					<a href="zoneEurope.html">Europe </a>
-					<a href="ZoneSearcher.html">Practice Search</a>
-					<a href="zoneAfrica.html">Africa</a>
-					<a href="zoneAsiaTemp.html">Asia Temperate</a>
-				  	<a href="zoneAsiaTrop.html">Asia Tropical</a>
+			<a class="active" href="index.html">Home</a>
+		  
+		  	<div class="dropdown">
+			  	<button class="dropdownbtn">Zones</button>
+			  	<div id="dropDownSearch" class="dropdown-content">
+				  	<input type="text" placeholder="Search.." id="zone_search" onkeyup="filter_Function()">
+				  	<a href="zoneEurope.html">Europe </a>
+				  	<a href="zoneAfrica.html">Africa</a>
+				  	<a href="zoneAsiaTemp.html">Asia Temperate</a>
+					<a href="zoneAsiaTrop.html">Asia Tropical</a>
 					<a href="zoneAustralasia.html">Australasia</a>
-					<a href="zonePacific.html">Pacific</a>
-					<a href="zoneNAmerica.html">Northern America</a>
-					<a href="zoneSAmerica.html">Southern America</a>
-					<a href="zoneAntartica.html">Antarctic</a>
-				  </div>
-
-			</div>
+				  	<a href="zonePacific.html">Pacific</a>
+				  	<a href="zoneNAmerica.html">Northern America</a>
+				  	<a href="zoneSAmerica.html">Southern America</a>
+				  	<a href="zoneAntartica.html">Antarctic</a>
+			  	</div> 
+		  	</div>
 			<a href="contactPage.html">Contact</a>
-			<input id="searchBar" type="text" placeholder="Search..">
-		</div>
+			<input id="search_bar" type="text" placeholder="Search..">
+	  	</div>
         
 		<h2 class="zoneName">Zone Europe</h2>
         <img class="zoneImages" src="europeImage.png" alt="Map of area">
-
 		<p>Humans have not only shaped the vegetation zones of Europe. They also have introduced many of the individual 
 			species of plants, both wild and cultivated, that commonly grow on the continent. To a perhaps surprising degree, 
 			European vegetation comprises a large number of plants originally from other parts of the world. Southward, the 
@@ -41,7 +39,6 @@
 			“closed” boreal forest occupies a large fraction—mainly north of the upper Volga River—of Russia and Scandinavia. 
 			Thin-leaved and cold-resistant conifers, together with birch, predominate.
 		</p>
-
         <div class="column">
             <ul>
                 <li class=plants><a href="NarcissusPseudonarcissus.html">Daffodil - Narcissus pseudonarcissus</a></li>
@@ -50,8 +47,8 @@
         </div>
         <div class="column">
             <ul>
-                <li class=plants>plant y</li>
-                <li class=plants>Plant z</li>
+				<li class=plants><a href="sorryPage.html">Plant c</a></li>
+				<li class=plants><a href="sorryPage.html">Plant d</a></li>
             </ul>
         </div>
         

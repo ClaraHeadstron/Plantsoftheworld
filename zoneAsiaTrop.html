@@ -3,33 +3,33 @@
 	<head>
 		<title>Plants in Asia (Tropical) </title>
 		<link rel="stylesheet" href="stylesheet.css">
-
+		<script src = "script.js"></script>
 	</head>
     <body>
 		<div class="navbar">
-  			<a class="active" href="index.html">Home</a>
-			<div class="dropdown">
-				<button class="dropdownbtn">Zones
-				</button>
-				<div class="dropdown-content">
-					<a href="zoneEurope.html">Europe </a>
-					<a href="zoneAfrica.html">Africa</a>
-					<a href="zoneAsiaTemp.html">Asia Temperate</a>
-				  <a href="zoneAsiaTrop.html">Asia Tropical</a>
-					<a href="zoneAustralasia.html">Australasia</a>
-					<a href="zonePacific.html">Pacific</a>
-					<a href="zoneNAmerica.html">Northern America</a>
-					<a href="zoneSAmerica.html">Southern America</a>
-					<a href="zoneAntartica.html">Antarctic</a>
-				  </div>
-			</div>
+			<a class="active" href="index.html">Home</a>
+		  
+		  	<div class="dropdown">
+			  	<button class="dropdownbtn" >Zones</button>
+			  	<div id="dropDownSearch" class="dropdown-content">
+				  	<input type="text" placeholder="Search.." id="zone_search" onkeyup="filter_Function()">
+				  	<a href="zoneEurope.html">Europe </a>
+				  	<a href="zoneAfrica.html">Africa</a>
+				  	<a href="zoneAsiaTemp.html">Asia Temperate</a>
+					<a href="zoneAsiaTrop.html">Asia Tropical</a>
+				  	<a href="zoneAustralasia.html">Australasia</a>
+				  	<a href="zonePacific.html">Pacific</a>
+				  	<a href="zoneNAmerica.html">Northern America</a>
+				  	<a href="zoneSAmerica.html">Southern America</a>
+				  	<a href="zoneAntartica.html">Antarctic</a>
+			  	</div>
+		  	</div>
 			<a href="contactPage.html">Contact</a>
-			<input id="searchBar" type="text" placeholder="Search..">
-		</div>
+			<input id="search_bar" type="text" placeholder="Search..">
+	  	</div>
         
 		<h2 class="zoneName">Zone Asia Tropical</h2>
         <img class="zoneImages" src="asiaTropicalImage.png" alt="Map of area">
-
 		<p>A significant feature of South Asian vegetation is the family Dipterocarpaceae (yielding aromatic oils and resins), 
 			which is represented there by more than 500 species.
 			Many of the tree species, such as teak, sal, and sandalwood, are highly valuable and are heavily exploited. 
@@ -39,19 +39,17 @@
 			Asia, and particularly on the alluvial plains, much of the natural vegetation has been cleared to make way 
 			for agriculture.
 		</p>
-
         <div class="column">
             <ul>
-                <li>Plant a</li>
-                <li>Plant b</li>
+				<li class=plants><a href="sorryPage.html">Plant a</a></li>
+				<li class=plants><a href="sorryPage.html">Plant b</a></li>
             </ul>
         </div>
         <div class="column">
             <ul>
-                <li>plant y</li>
-                <li>Plant z</li>
+				<li class=plants><a href="sorryPage.html">Plant c</a></li>
+				<li class=plants><a href="sorryPage.html">Plant d</a></li>
             </ul>
         </div>
-        
     </body>
 </html>

@@ -1,8 +1,12 @@
+/*Style sheet for Plants of the world website
+See heading comments for each section of css*/
+
 /* Nav bar css including dropdown */
 .navbar {
   overflow: hidden;
   background-color: #b5e78d;
   font-family: Arial;
+  border-radius: 30px;
 }
 
 .navbar a {
@@ -25,13 +29,12 @@
   color: black;
 }
 
+/*Nav bar continued..Dropdown*/
 .dropdown {
   float:left;
   overflow:hidden;
 }
 
-
-/* Make droppdown always on top*/
 .dropdown .dropdownbtn{
   border:none;
   background-color: #b5e78d;
@@ -66,56 +69,34 @@
   background-color: #aab28c;
 }
 
-/*Show the dropdowns */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-#searchBar {
+/*(Fake) Search bar. See deviations in report for more information */
+#search_bar {
   margin-top:25px;
   margin-left:25px;
   font-size:15px;
   position:relative;
 }
 
-
-/*
-
-
-/*Search bar attempt
-.search-dropdown-content {
-  background-color:#b5e78d;
-  position:relative;
-  width: 300px;
-  z-index:2;
-  display: none;
+/*Search bar for the zone dropdown*/
+#zone_search {
+  box-sizing: border-box;
+  width:294px;
+  margin-left:2px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
 }
 
-.search-dropdown-content a {
-  float: none;
-  padding: 25px 75px;
-  text-decoration: none;
-  text-align: left;  
-}
+/*End of nav bar css */
 
-.search-dropdown-content a:hover {
-  background-color: #aab28c;
-}
-
-.search-dropdown:hover .search-dropdown-content {
-  display:inline;
-  float:right;
-}
-
-#myMenu li {
-  display:block;
-}
-
-*/
-
-
-/*End of nav bar */
-#mainTitle {
+/*Home Page */
+#main_title {
   padding: 5px;
   padding-left:10px;
   padding-right:100px;
@@ -126,18 +107,12 @@
   border-top:2px solid black;
 }
 
-#startP{
-  position:relative;
-}
-
-#creds{
-  float:left;
-}
-
+/*CSS for all buttons */
 .button{
   border-radius:1px;
 }
-/*Add phone access for world image*/
+
+/*Image of world */
 #imageworld {
   width:1200px;
   height:500px;
@@ -146,69 +121,79 @@
 .imageoverlay {
   position: relative;
   text-align: center;
-  
 }
+
 .zone{
   text-align: center;
-  font-size: 14px;
   border:2px solid black;
 }
 
-#zoneNAmerica{
-  position: absolute;
-  top: 160px;
-  left: 250px;
+@media only screen and (max-width: 800px) {
+  /* For mobile phones */
+  #imageworld {
+    width:400px;
+    height:167px;
+  }
+  .zone{
+    border:1px solid black;
+  }
 }
 
-
-#zoneSAmerica{
+/*The zone buttons on world map*/
+#zone_NAmerica{
   position: absolute;
-  top: 350px;
-  left: 320px;
+  top: 25%;
+  left: 20%;
 }
 
-#zoneAfrica{
+#zone_SAmerica{
   position: absolute;
-  top: 300px;
-  right: 500px;
+  top: 55%;
+  left: 26%;
 }
 
-#zoneAsiaTem{
+#zone_Africa{
   position: absolute;
-  top: 160px;
-  right: 280px;
+  top: 47%;
+  left: 50%
 }
 
-#zoneAsiaTrop{
+#zone_AsiaTem{
   position: absolute;
-  top: 300px;
-  right: 200px;
+  top: 25%;
+  left: 66%;
 }
 
-#zoneEurope{
+#zone_AsiaTrop{
   position: absolute;
-  top: 160px;
-  right: 500px;
+  top: 47%;
+  left: 70%;
 }
 
-#zoneAustrala{
+#zone_Europe{
   position: absolute;
-  bottom: 170px;
-  right: 120px;
+  top: 25%;
+  left: 50%;
+}
+#zone_Australa{
+  position: absolute;
+  bottom: 32%;
+  left: 80%;
 }
 
-#zonePacific{
+#zone_Pacific{
   position: absolute;
-  bottom: 200px;
-  right:1px;
+  bottom: 32%;
+  left: 92%;
 }
 
-#zoneAntarctic{
+#zone_Antarctic{
   position: absolute;
-  bottom: 50px;
-  right:500px;
+  bottom: 8%;
+  left: 50%;
 }
 
+/*Zone pages*/
 .zoneName{
   position:relative; 
   padding: 20px 10px 20px 5px;
@@ -233,7 +218,7 @@
   position:relative;
 }
 
-/*Columns for zone pages*/
+/*Columns of plants for zone pages*/
 * {
   box-sizing:border-box;
 }
@@ -244,7 +229,8 @@
   padding: 10px;
 }
 
-/*Plant links and nav bar*/
+/*Plant pages
+/*links and nav bar*/
 .plants a {
   color:green;
   background-color: transparent;
@@ -257,8 +243,8 @@
   left:100px
 }
 
-/*Plant page*/
-.plantName{
+/*Body of plant pages*/
+.plant_name{
   position:relative; 
   padding: 10px 10px 10px 15px;
   left:10px;
@@ -271,20 +257,21 @@
   clear: both;
 }
 
-.plantImage{
+.plant_Image{
   position:relative;
   height:220px;
   width:400px;
   left:100px;
 }
 
+/*Facts of plant near image*/
 .facts{
   clear:both;
   float:right;
   width:50%;
 }
 
-.factTitle{
+.fact_Title{
   position:relative; 
   padding: 10px 10px 10px 15px;
   left:10px;
@@ -295,11 +282,11 @@
   clear: both;
 }
 
-.plantBP{
+.plant_bullet_points{
   padding:2px;
 }
 
-.mainPlantText{
+.main_Plant_Text{
   position:relative; 
   padding: 10px 10px 10px 5px;
   background-color:lightgrey;
@@ -320,6 +307,7 @@
   padding-left: 10px;
 }
 
+/*Pop-up factfile on plant page*/
 .popup{
   position: relative;
   display: inline-block;
@@ -341,14 +329,14 @@
   border-color: #454545;
   margin-top:4px;
   padding:6px;
-  bottom:5px;
+  bottom:10px;
   color:#454545;
   background-color: #b5e78d;
 }
 
-.popup .popuptext {
+.popup .popup_text {
   visibility: hidden;
-  width: 300px;
+  width: 320px;
   height:250px;
   background-color: #028c0b;
   color: #ffffffff;
@@ -364,7 +352,7 @@
   border-width: 3px;
 }
 
-.factList{
+.fact_List{
   width:45%;
   float:left;
   text-align:left;
@@ -378,3 +366,63 @@
 .popup .hide {
   visibility: hidden;
 }
+
+
+/*The unmade functioning page*/
+.sorry_button{
+  position:relative;
+  left:150px;
+  padding:20px;
+  font-size:20px;
+}
+
+#sorry_page_img{
+  position:relative;
+  height:200px;
+  width:200px;
+  left:100px;
+}
+
+/*Contact page */
+#submit_box{
+  border:2px;
+  position:relative;
+  border-style:dashed;
+  border-color:#028c0b;
+  width: 650px;
+  margin: 20px auto 25px auto;
+  padding:5px;
+}
+
+#pre_talk{
+  position:relative;
+  left:200px;
+}
+
+.form{
+  position:relative;
+  padding-left:200px;
+  padding-bottom:20px;
+}
+
+#contact_title{
+    font-size: 72px;
+    color: black;
+    text-align: center;
+}
+
+.contact_info{
+    padding: 10px;
+    width: 50%;
+    font-size: 1rem;
+    border-radius: 4px;
+    border-style:solid;
+}
+
+#submit_btn{
+  position:relative;
+  margin-left:70px;
+  padding:10px;
+  font-size:20px;
+}
+/*CSS stylesheet end*/

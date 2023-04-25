@@ -1,65 +1,69 @@
 <!DOCTYPE html>
+<!--This is the home page-->
 <html>
 	<head>
-		<title>Plants CWK</title>
+		<title>Plants of the World</title>
 		<link rel="stylesheet" href="stylesheet.css">
+		<script src = "script.js"></script>
 
 	</head>
 	<body>
 		<div class="navbar">
-  			<a class="active" href="#home">Home</a>
+  			<a class="active" href="index.html">Home</a>
+			
 			<div class="dropdown">
-				<button class="dropdownbtn">Zones
-				</button>
-				<div class="dropdown-content">
+				<button class="dropdownbtn" >Zones</button>
+				<div id="dropDownSearch" class="dropdown-content">
+					<input type="text" placeholder="Search.." id="zone_search" onkeyup="filter_Function()">
 					<a href="zoneEurope.html">Europe </a>
 					<a href="zoneAfrica.html">Africa</a>
 					<a href="zoneAsiaTemp.html">Asia Temperate</a>
-				  <a href="zoneAsiaTrop.html">Asia Tropical</a>
+				  	<a href="zoneAsiaTrop.html">Asia Tropical</a>
 					<a href="zoneAustralasia.html">Australasia</a>
 					<a href="zonePacific.html">Pacific</a>
 					<a href="zoneNAmerica.html">Northern America</a>
 					<a href="zoneSAmerica.html">Southern America</a>
 					<a href="zoneAntartica.html">Antarctic</a>
-				  </div>
+				</div>
+				
 			</div>
   			<a href="contactPage.html">Contact</a>
-  			<input id="searchBar" type="text" placeholder="Search..">
+  			<input id="search_bar" type="text" placeholder="Search..">
 		</div>
-
-		<h1 id="mainTitle">Botantical Continents</h1>
+		
+		<h1 id="main_title">Botanical Continents</h1>
 
 		<div class="imageoverlay">
-			<img src="worldBot.png" id="imageworld">
-			<h6 id="creds">Based on VictorPines/derivative: Peter coxhead - based on: BlankMap-World.svg:, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=41464916</h6>
-			<div class="zone" id="zoneNAmerica">
+			<img src="worldBotanical.png" id="imageworld">
+			<h6>Based on VictorPines/derivative: Peter coxhead - based on: BlankMap-World.svg:, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=41464916</h6>
+			
+			<div class="zone" id="zone_NAmerica">
 				<button type="button" onclick="location.href='zoneNAmerica.html'">Zone:North America</button>
 			</div>
-			<div class="zone" id="zoneSAmerica">
+			<div class="zone" id="zone_SAmerica">
 				<button type="button" onclick="location.href='zoneSAmerica.html'">Zone:South America</button>
 			</div>
-			<div class="zone" id="zoneAfrica">
+			<div class="zone" id="zone_Africa">
 				<button type="button" onclick="location.href='zoneAfrica.html'">Zone:Africa</button>
 			</div>
-			<div class="zone" id="zoneAsiaTem">
+			<div class="zone" id="zone_AsiaTem">
 				<button type="button" onclick="location.href='zoneAsiaTemp.html'">Zone:Asia Temperate</button>
 			</div>
-			<div class="zone" id="zoneAsiaTrop">
+			<div class="zone" id="zone_AsiaTrop">
 				<button type="button" onclick="location.href='zoneAsiaTrop.html'">Zone:Asia Tropical</button>
 			</div>
-			<div class="zone" id="zoneEurope">
+			<div class="zone" id="zone_Europe">
 				<button type="button" onclick="location.href='zoneEurope.html'">Zone:Europe</button>
 			</div>
-			<div class="zone" id="zoneAustrala">
+			<div class="zone" id="zone_Australa">
 				<button type="button" onclick="location.href='zoneAustralasia.html'">Zone:Australasia</button>
 			</div>
-			<div class="zone" id="zonePacific">
+			<div class="zone" id="zone_Pacific">
 				<button type="button" onclick="location.href='zonePacific.html'">Zone:Pacific</button>
 			</div>
-			<div class="zone" id="zoneAntarctic">
+			<div class="zone" id="zone_Antarctic">
 				<button type="button" onclick="location.href='zoneAntartica.html'">Zone:Antarctic</button>
 			</div>
 		</div>
-		
 	</body>
 </html>

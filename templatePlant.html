@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--Not linked page.
+This page is to be copied and used as a template for all plants-->
+<html>
+	<head>
+		<title>*Common Name - Scientific Name*</title>
+		<link rel="stylesheet" href="stylesheet.css">
+        <script src="script.js"></script>
+
+	</head>
+    <body>
+		<div class="navbar">
+            <a class="active" href="index.html">Home</a>
+          
+            <div class="dropdown">
+                <button class="dropdownbtn">Zones</button>
+                <div id="dropDownSearch" class="dropdown-content">
+                    <input type="text" placeholder="Search.." id="zone_search" onkeyup="filter_Function()">
+                    <a href="zoneEurope.html">Europe </a>
+                    <a href="zoneAfrica.html">Africa</a>
+                    <a href="zoneAsiaTemp.html">Asia Temperate</a>
+                    <a href="zoneAsiaTrop.html">Asia Tropical</a>
+                    <a href="zoneAustralasia.html">Australasia</a>
+                    <a href="zonePacific.html">Pacific</a>
+                    <a href="zoneNAmerica.html">Northern America</a>
+                    <a href="zoneSAmerica.html">Southern America</a>
+                    <a href="zoneAntartica.html">Antarctic</a>
+                </div>
+              
+            </div>
+            <a href="contactPage.html">Contact</a>
+            <img class=logoNav src="logo.png" alt="logo">
+		</div>
+        <div class="rest">
+            <h2 class="plantName">*Common Name*</h2>
+
+            <div class="facts">
+                <h4 class="factTitle">Facts</h4>
+                <ul>
+                <!--Facts would be sourced manually or at least written manually with a fetch to find the information-->
+                    <li class="plant_bullet_points">*Fact 1*</li>
+                    <li class="plant_bullet_points">*Fact 2*</li>
+                    <li class="plant_bullet_points">*Fact 3*</li>
+                    <li class="plant_bullet_points">*Fact 4*</li>
+                </ul>
+            </div>
+            <img class="plantImage" src="plantImage.jpg" alt="Image of plant">
+
+            <div class="box">
+                <h3 class="mainPlantText">Deep Delve into *Plant Common Name*</h3>
+                <p class=delving> *Common name* *Information on plant*</p>
+                <p class="delving">
+                *More plant information*
+                </p>
+            </div>
+            <div class="popup" onclick="factfile_Function()">Click me!
+                <span class="popuptext" id="popup_id">
+                    <h3>*Common Name*</h3>
+                    <div class="factList">
+                        <ul>
+                            <li>Location: </li>
+                            <li>Growth: </li>
+                            <li>Edible: </li>
+                            <li>Soil pH: </li>
+                            <li>Colour: </li>
+                        </ul>
+                    </div>
+                    <div class="factList"> 
+                        <!---If JS was working - onmouseover="fetch_trefle()" would be added in the div
+                        It would automatically populate the <ul> tag with the informatio for the above--->
+                        <ul>
+                            *location*<br>
+                            *growth_form*<br>
+                            *edible*<br>
+                            *minimum pH* to *maximum ph*<br>
+                            *flower.color*<br>
+                        </ul>    
+                        </div>
+                        <div class="popdown" onclick="factfile_Exit_Function()">
+                            Exit
+                        </div>
+                </span>
+            </div>
+        </div>
+    </body>
+</html>

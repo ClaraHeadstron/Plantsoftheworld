@@ -1,13 +1,16 @@
 <!DOCTYPE html>
+<!--This page is for any pages that aren't completed yet. This website is for coursework and 
+	therefore doesn't need hundreds of plant pages. This is to show it leads somewhere-->
 <html>
 	<head>
-		<title>Contact Page</title>
+		<title>Functioning Page</title>
 		<link rel="stylesheet" href="stylesheet.css">
 		<script src = "script.js"></script>
+
 	</head>
-	<body>
+    <body>
 		<div class="navbar">
-			<a class="active" href="index.html">Home</a>
+		   	<a class="active" href="index.html">Home</a>
 		  
 		  	<div class="dropdown">
 			  	<button class="dropdownbtn" >Zones</button>
@@ -17,7 +20,7 @@
 				  	<a href="zoneAfrica.html">Africa</a>
 				  	<a href="zoneAsiaTemp.html">Asia Temperate</a>
 					<a href="zoneAsiaTrop.html">Asia Tropical</a>
-				  	<a href="zoneAustralasia.html">Australasia</a>
+					<a href="zoneAustralasia.html">Australasia</a>
 				  	<a href="zonePacific.html">Pacific</a>
 				  	<a href="zoneNAmerica.html">Northern America</a>
 				  	<a href="zoneSAmerica.html">Southern America</a>
@@ -26,22 +29,19 @@
 		  	</div>
 			<a href="contactPage.html">Contact</a>
 			<input id="search_bar" type="text" placeholder="Search..">
-	  	</div>
-
-     	<h1 id="contact_title">Contact Us</h1>
-     	<p id="pre_talk">Sometimes websites break or we make a mistake with a plant's information. If you notice anything wrong - fill in this form!</p>
-		<div id="submit_box">
-			<form class="form" id="formID">
-        		Please enter your name:<br>
-        		<input class="contact_info" type="text" name="fname"><br>
-        			Describe your issue:<br>
-        		<textarea class="contact_info" id="issue_expla" name="message"></textarea><br>
-        			Please enter your email:<br>
-        		<input class="contact_info" type="text" name="email">
-				<br><br>
-				<!--Fake submit button-->
-        		<button id="submit_btn" type="submit" name="submit" onclick=submit_Function()>Submit</button>
-			</form>
 		</div>
-    </body>
-</html>
+        
+		<h2>This page isn't made yet!</h2>
+
+		<p class="sorry_paragraph">Hey there! I'm afraid you found a page that hasn't been made yet.
+			<br>There are a lot of other pages you can go have a look at though.
+
+			<br> This page is just to show that the item you just clicked on would 
+			<br>- in a complete website - take you somewhere. 
+		</p>
+		<div>
+			<!--https://www.w3schools.com/js/js_api_history.asp-->
+        	<button class="sorry_button" onclick="history.back()">Go Back</button>
+		</div>
+		<img src="sorryPageImage.png" id="sorry_page_img">
+	</body>
